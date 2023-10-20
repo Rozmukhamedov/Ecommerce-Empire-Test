@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 
 export interface TableRow {
-  id: number;
+  id: number | string;
   image: string;
   description: string;
   date: string;
@@ -17,7 +17,7 @@ export interface TableRow {
 
 interface ModalDialogContentProps {
   row: TableRow | null;
-  onClose: any
+  onClose: any;
 }
 
 const ModalDialogContent: React.FC<ModalDialogContentProps> = ({

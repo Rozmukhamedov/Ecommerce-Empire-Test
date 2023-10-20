@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import DataTable from "./containers/Table/DataTable";
+import { createTheme, ThemeProvider, Container, Stack } from "@mui/material";
 
 export interface TableRow {
   id: number;
@@ -50,7 +51,24 @@ export const rows: TableRow[] = [
 ];
 
 function App() {
-  return <DataTable data={rows} />;
+  const [isDarkMode, setIsDarkMode] = useState(true);
+  const myTheme = createTheme({
+    palette: {
+      mode: isDarkMode ? "light" : "dark",
+    },
+  });
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  return (
+    <ThemeProvider theme={myTheme}>
+      <Container maxWidth="md">
+        <DataTable data={rows} />
+      </Container>
+    </ThemeProvider>
+  );
 }
 
 export default App;

@@ -1,27 +1,70 @@
-# React + TypeScript + Vite
+Проект "Моя удивительная таблица"
+1. Обзор проекта
+Проект "Моя удивительная таблица" - это веб-приложение, созданное с использованием React и Material-UI, которое позволяет отображать данные в удобной таблице. Эта таблица обладает следующими ключевыми возможностями:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Отображение данных с помощью компонента DataGrid из Material-UI.
+Поддержка не менее 4-х колонок, включая колонку с изображением, текстовым описанием, датой и числами.
+Фильтрация и сортировка данных в таблице.
+Автоматическая высота строк в диапазоне от 100px до 300px.
+Открытие модального окна с увеличенной версией изображения при клике на изображение в таблице.
+Этот проект поможет вам разобраться в использовании Material-UI, создании интерактивных таблиц и модальных окон в React.
 
-Currently, two official plugins are available:
+2. Инструкции по установке
+Для установки проекта "Моя удивительная таблица" следуйте этим шагам:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Убедитесь, что у вас установлен Node.js на вашем компьютере. Если нет, вы можете скачать его с официального сайта Node.js.
 
-## Expanding the ESLint configuration
+Клонируйте репозиторий с проектом с помощью следующей команды:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+bash
+Copy code
+git clone https://github.com/yourusername/my-amazing-table.git
+Перейдите в каталог проекта:
+bash
+Copy code
+cd my-amazing-table
+Установите зависимости проекта:
+bash
+Copy code
+npm install
+3. Руководство по использованию
+Запуск приложения
+Чтобы запустить приложение "Моя удивительная таблица", выполните следующую команду:
 
-- Configure the top-level `parserOptions` property like this:
+bash
+Copy code
+npm start
+После этого приложение будет доступно по адресу http://localhost:5173/.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Использование таблицы
+При открытии приложения вы увидите таблицу с данными. Каждая строка содержит изображение, текстовое описание, дату и числа.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Для сортировки данных, щелкните по заголовку колонки.
+
+Чтобы увеличить изображение, кликните на нем. Появится модальное окно с увеличенным изображением.
+
+4. Конфигурация
+Проект "Моя удивительная таблица" предоставляет некоторые настраиваемые опции:
+
+Колонки в таблице могут быть настроены для отображения дополнительной информации.
+
+Стили колонок и ячеек данных могут быть настроены в файле constainers/Table/DataTable.tsx.
+
+5. Рекомендации по внесению вклада
+Мы приветствуем ваши вклады в проект "Моя удивительная таблица". Если вы хотите внести свой вклад, выполните следующие шаги:
+
+Проверьте существующие проблемы (issues) в репозитории и выберите ту, в которой хотели бы работать.
+
+Форкните репозиторий на GitHub.
+
+Создайте новую ветку (branch) на вашем форке для решения проблемы.
+
+Внесите необходимые изменения в код.
+
+Создайте запрос на слияние (pull request) в оригинальный репозиторий.
+
+Ваш запрос на слияние будет рассмотрен и, при необходимости, внесены исправления.
+
+После принятия запроса на слияние, ваши изменения будут включены в проект.
+
+Мы благодарим вас за ваш вклад в развитие проекта "Моя удивительная таблица"!
